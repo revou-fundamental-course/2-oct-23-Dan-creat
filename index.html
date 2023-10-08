@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kalkulator suhu</title>
+    <link rel="stylesheet" href="css/stle.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container">
+      <h1>Kalkulator Konversi Suhu</h1>
+      <form action="#" class="form">
+
+        <label for="jenisSuhu">Pilih jenis suhu Celcius / Fahrenheit:</label>
+        <select id="jenisSuhu" name="jenisSuhu">
+            <option value="" disabled selected></option>
+          <option value="celcius">Celsius</option>
+          <option value="fahrenheit">Fahrenheit</option>
+        </select>
+
+        <label for="suhu">Masukkan suhu:</label>
+        <input type="text" id="suhu" name="suhu" />
+
+        <button type="button" onclick="konversiSuhu()" class="btn">Konversi</button>
+
+        <label for="hasil">Hasil Konversi Suhu:</label>
+        <div class="box" name="hasil" id="hasil" cols="30" rows="5"></div>
+      </form>
+    </div>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
